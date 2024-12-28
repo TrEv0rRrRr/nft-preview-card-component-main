@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="output.css">
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <style>
+    figure:hover {
+      cursor: pointer;
+    }
+
+    figure:hover .eye {
+      opacity: 1;
+    }
+
+    figure:hover .overlay {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+
+<body class="font-Outfit bg-Main-BG text-white flex flex-col items-center justify-center min-h-screen min-w-screen">
+
+  <div class="container flex flex-col bg-Card-BG rounded-xl p-[1.5rem] items-center min-w-[10rem] max-w-[20rem] gap-5">
+
+    <figure class="relative hover:cursor-pointer">
+      <img src="./images/images/image-equilibrium.jpg" alt="Equilibrium #3429 preview"
+        class="ethereum object-cover rounded-xl">
+      <div class="overlay absolute top-0 left-0 w-full h-full bg-Cyan-Color opacity-0 transition-all rounded-xl"></div>
+      <img src="./images/icons/icon-view.svg" alt="" class="eye absolute top-[42%] left-[41%] opacity-0 transition-all">
+    </figure>
+
+    <div class="flex flex-col gap-5">
+      <div class="info flex flex-col gap-3">
+        <h1 class="text-xl font-[600] hover:text-Cyan-Color hover:cursor-pointer transition-all">Equilibrium #3429</h1>
+        <p class="text-Soft-Blue text-base font-light">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+      </div>
+
+      <div class="flex justify-between items-center gap-2">
+        <p class="text-Cyan-Color flex items-center gap-2 font-normal text-[15px]">
+          <img src="./images/icons/icon-ethereum.svg" alt="">
+          0.041 ETH
+        </p>
+        <p class="text-Soft-Blue flex items-center gap-2 font-normal text-[15px]">
+          <img src="./images/icons/icon-clock.svg" alt="">
+          3 days left
+        </p>
+      </div>
+
+      <div class="flex gap-3 items-center border-t-[1px] border-Line-Color pt-4 mb-3">
+        <img src="./images/images/image-avatar.png" alt="Jules Wyvern avatar"
+          class="rounded-full w-7 h-7 border-[1px] border-white">
+        <p class="text-Soft-Blue font-light">
+          Creation of <span class="text-white hover:text-Cyan-Color hover:cursor-pointer transition-all">Jules
+            Wyvern</span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
